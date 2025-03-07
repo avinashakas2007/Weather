@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/43124feaf5.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="front">
+        <div class="today">
+
+          <div class="inloc"><%= location %></div>
+          <img src="gif.gif" alt="" class="locimage">
+            <img class="wimage" src=<%= addr %> alt="">
+            <div class="data">
+                <p class="tempe"><%= tem %> °c </p>
+                <h2><%= day %></h2>
+              
+                <h4><%=des%></h4>
+            </div>
+           
+        </div>
+        <div class="week">
+            <h3>Week</h3>
+            <div class="wsummary">
+                <div class="w1 w">
+                    <p><%= day1 %></p>
+                    <img class="weekimg" src="<%= addr1 %>" alt="">
+                    <p><%=min1 %>-<%=max1 %></p>
+
+                </div>
+                <div class="w2 w">
+                    
+                    <p><%= day2 %></p>
+                    <img class="weekimg" src="<%= addr2 %>" alt="">
+                    <p><%=min2 %>-<%=max2 %></p>
+                </div>
+                <div class="w3 w">
+                    
+                    <p><%= day3 %></p>
+                    <img class="weekimg" src="<%= addr3 %>" alt="">
+                    <p><%=min3 %>-<%=max3 %></p>
+                </div>
+                <div class="w4 w">
+                    
+                    <p><%= day4 %></p>
+                    <img class="weekimg" src="<%= addr4 %>" alt="">
+                    <p><%=min4 %>-<%=max4 %></p>
+                </div>
+                <div class="w5 w">
+                    
+                    <p><%= day5 %></p>
+                    <img class="weekimg" src="<%= addr5 %>" alt="">
+                    <p><%=min5 %>-<%=max5 %></p>
+                </div>
+            </div>
+            <div class="highlights">
+                <h3>Today's Highlight</h3>
+                <div class="high">
+                    <div class="hi1 h">
+                        <img src="pngwing.com.png" class="hi11" alt="">
+                        <div class="hcontent">
+                             <p>Pressure</p>
+                       
+                            <%= pres %>
+                        </div>
+                       
+                        
+                    </div>
+                    <div class="hi2 h">
+                        <img src="moisture.png" alt="" class="hi11">
+                        <div class="hcontent">
+                            <p>Humidity</p>
+                        
+                   <%= Humidity %>
+                        </div>
+                        
+                    </div>
+                    <div class="hi3 h">
+                        <img src="wind.png" alt="" class="hi11 hi22">
+                        <div class="hcontent">
+                            <p>Wind Speed</p>
+                     
+                            <%= sp %>
+                        </div>
+                     
+                    </div>
+                    <div class="hi4 h">
+                        <img src="visibility.png" alt="" class="hi11">
+                        <div class="hcontent">
+                            <p>Visibility</p>
+                      
+                            <%= vi %>
+                        </div>
+                       
+                    </div>
+                    <div class="hi5 h">
+                        <img src="temp.png" alt="" class="hi11">
+                        <div class="hcontent">
+                            <p>Max Temperature</p>
+              
+                        <%= max %>
+                        </div>
+                        
+                    </div>
+                    <div class="hi6 h">
+                       <img src="sea.png" alt="" class="hi11">
+                        <div class="hcontent">
+                            <p>Sea Level</p>
+                        
+                        <%= sea %>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
